@@ -1,0 +1,19 @@
+# action.yml
+name: 'Merge yamls'
+description: 'specify a folder and a filename and this action will merge it into one big yaml'
+inputs:
+  folder:  # id of input
+    description: 'folder where subfolders have yamls'
+    required: true
+  file: 
+    description: 'filename of yaml to look for'
+    required: true
+outputs:
+  yaml: # id of output
+    description: 'the combined yaml'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.folder }}
+    - ${{ inputs.file }}

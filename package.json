@@ -1,0 +1,21 @@
+{
+  "name": "yaml-merger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0",
+    "js-yaml": "^3.14.0",
+    "readdirp": "^3.4.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3"
+  }
+}
