@@ -1,4 +1,3 @@
-# action.yml
 name: 'Merge yamls'
 description: 'specify a folder and a filename and this action will merge it into one big yaml'
 inputs:

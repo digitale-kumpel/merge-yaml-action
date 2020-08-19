@@ -673,7 +673,7 @@ async function run() {
         }
       }
     }
-    core.setOutput(yaml.safeDump(yamlArray))
+    core.setOutput('yaml', yaml.safeDump(yamlArray))
   } catch (error) {
     core.setFailed(error.message);
   }
