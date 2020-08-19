@@ -658,7 +658,7 @@ const yaml = __webpack_require__(414)
 const fs = __webpack_require__(747)
 const core = __webpack_require__(470);
 
-const main = async () => {
+async function run() {
   const folder = core.getInput('folder')
   const file = core.getInput('file')
   try {
@@ -677,10 +677,9 @@ const main = async () => {
   } catch (error) {
     core.setFailed(error.message);
   }
-
 }
 
-main()
+run();
 
 
 /***/ }),

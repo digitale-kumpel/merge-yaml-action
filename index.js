@@ -3,7 +3,7 @@ const yaml = require("js-yaml")
 const fs = require("fs")
 const core = require('@actions/core');
 
-const main = async () => {
+async function run() {
   const folder = core.getInput('folder')
   const file = core.getInput('file')
   try {
@@ -22,7 +22,6 @@ const main = async () => {
   } catch (error) {
     core.setFailed(error.message);
   }
-
 }
 
-main()
+run();
