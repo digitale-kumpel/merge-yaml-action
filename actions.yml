@@ -12,8 +12,5 @@ outputs:
   yaml: # id of output
     description: 'the combined yaml'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.folder }}
-    - ${{ inputs.file }}
+  using: node12
+  main: dist/index.js
